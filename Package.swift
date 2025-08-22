@@ -1,19 +1,14 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.10
 
 import PackageDescription
 
 let package = Package(
     name: "NodeGraph",
     platforms: [
-        // Relevant platforms.
-        .iOS(.v13), .macOS(.v10_15), .tvOS(.v13)
+        .iOS(.v15), .macOS(.v12), .tvOS(.v15), .visionOS(.v1)
     ],
     products: [
         .library(name: "NodeGraph", targets: ["NodeGraph"])
-    ],
-    dependencies: [
-        // It's a good thing to keep things relatively
-        // independent, but add any dependencies here.
     ],
     targets: [
         .target(
