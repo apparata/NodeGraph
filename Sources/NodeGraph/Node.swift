@@ -115,7 +115,7 @@ public func ==(lhs: Node, rhs: Node) -> Bool {
     return lhs === rhs
 }
 
-protocol NodeDelegate: class {
+protocol NodeDelegate: AnyObject {
     func node(_ node: Node, didEvaluateWithResult result: Bool)
 }
 
